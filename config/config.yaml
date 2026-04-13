@@ -1,0 +1,66 @@
+# Camera Configuration
+camera:
+  index: 0
+  resolution:
+    width: 640
+    height: 480
+  fps: 30
+
+# Model Configuration
+model:
+  path: "models/emotion_model.h5"
+  requires_pretraining: true
+  input_size: 224
+
+# Detection Configuration
+detection:
+  confidence_threshold: 0.6
+  min_face_size: 20
+  face_detector: "haarcascade"  # Options: "haarcascade", "dnn"
+
+# Emotion Labels
+emotions:
+  - "angry"
+  - "disgust"
+  - "fear"
+  - "happy"
+  - "neutral"
+  - "sad"
+  - "surprised"
+
+# Logging Configuration
+logging:
+  enabled: true
+  output_file: "output/emotion_log.csv"
+  log_interval: 1  # Log every N frames
+
+# Display Configuration
+display:
+  show_fps: true
+  show_confidence: true
+  font_scale: 0.7
+  thickness: 2
+  window_title: "Emotion Detection System"
+
+# Data Collection
+data_collection:
+  output_dir: "dataset/collected_images"
+  image_size: 224
+  samples_per_emotion: 100
+
+# Training Configuration
+training:
+  epochs: 50
+  batch_size: 32
+  validation_split: 0.2
+  learning_rate: 0.001
+  early_stopping_patience: 10
+
+# Advanced Features
+features:
+  emotion_history_enabled: true
+  history_window: 30  # frames
+  confidence_smoothing_enabled: true
+  smoothing_window: 5
+  show_statistics: true
+  gpu_acceleration: true
