@@ -1,40 +1,41 @@
 # Emotion Detection System
+> Last automated login update: 2026-04-14 12:41:38
 
 A complete, production-ready emotion detection system using OpenCV and Deep Learning. The system detects faces in real-time, classifies emotions, and provides comprehensive analysis with logging and statistics.
 
 ## Features
 
-✅ **Real-time Face Detection**
+Ã¢Å“â€¦ **Real-time Face Detection**
 - Haar Cascade and DNN-based detection methods
 - Multiple face support
 - Configurable detection parameters
 
-✅ **Emotion Classification**
+Ã¢Å“â€¦ **Emotion Classification**
 - 7 emotion classes: Happy, Sad, Angry, Surprised, Neutral, Fear, Disgust
 - CNN-based deep learning model
 - Confidence scoring and smoothing
 - GPU acceleration support
 
-✅ **Data Collection & Training**
+Ã¢Å“â€¦ **Data Collection & Training**
 - Interactive dataset collection from webcam
 - Automated model training with data augmentation
 - Training history visualization
 - Model evaluation and metrics
 
-✅ **Real-time Visualization**
+Ã¢Å“â€¦ **Real-time Visualization**
 - Face bounding boxes with emotion labels
 - Confidence scores displayed
 - FPS counter
 - Emotion statistics overlay
 - Color-coded emotions for easy interpretation
 
-✅ **Logging & Analysis**
+Ã¢Å“â€¦ **Logging & Analysis**
 - CSV logging of predictions
 - Real-time emotion statistics
 - Emotion frequency tracking
 - Comprehensive reporting
 
-✅ **Advanced Features**
+Ã¢Å“â€¦ **Advanced Features**
 - Emotion history tracking
 - Confidence smoothing
 - Multiple GPU acceleration options
@@ -109,7 +110,7 @@ python main.py
 | `q` | Quit the application |
 | `s` | Show emotion statistics |
 | `c` | Clear statistics |
-| `f` | Toggle face detector (Haar Cascade ↔ DNN) |
+| `f` | Toggle face detector (Haar Cascade Ã¢â€ â€ DNN) |
 | `h` | Toggle emotion history tracking |
 
 ### Run with Video File
@@ -128,49 +129,49 @@ system.run(source="path/to/video.mp4")
 
 ```
 emotion_detection_system/
-├── main.py                          # Main application entry point
-├── requirements.txt                 # Python dependencies
-├── README.md                        # This file
-│
-├── config/
-│   └── config.yaml                  # Configuration file
-│
-├── face_detection/
-│   ├── __init__.py
-│   └── face_detector.py             # Face detection module
-│
-├── emotion_recognition/
-│   ├── __init__.py
-│   └── emotion_classifier.py        # Emotion classification module
-│
-├── dataset/
-│   ├── __init__.py
-│   ├── collect_data.py              # Data collection script
-│   └── collected_images/            # Collected training images
-│       ├── angry/
-│       ├── disgust/
-│       ├── fear/
-│       ├── happy/
-│       ├── neutral/
-│       ├── sad/
-│       └── surprised/
-│
-├── training/
-│   ├── __init__.py
-│   └── train_model.py               # Model training script
-│
-├── models/
-│   └── emotion_model.h5             # Trained emotion model
-│
-├── utils/
-│   ├── __init__.py
-│   ├── fps.py                       # FPS counter
-│   ├── logger.py                    # Prediction logging
-│   └── draw.py                      # Visualization utilities
-│
-└── output/
-    ├── emotion_log.csv              # Emotion prediction log
-    └── training_history.png         # Training plots
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ main.py                          # Main application entry point
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ requirements.txt                 # Python dependencies
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ README.md                        # This file
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ config/
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ config.yaml                  # Configuration file
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ face_detection/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ face_detector.py             # Face detection module
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ emotion_recognition/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ emotion_classifier.py        # Emotion classification module
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ dataset/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ collect_data.py              # Data collection script
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ collected_images/            # Collected training images
+Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ angry/
+Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ disgust/
+Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ fear/
+Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ happy/
+Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ neutral/
+Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ sad/
+Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ surprised/
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ training/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ train_model.py               # Model training script
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ models/
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ emotion_model.h5             # Trained emotion model
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ utils/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ __init__.py
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ fps.py                       # FPS counter
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ logger.py                    # Prediction logging
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ draw.py                      # Visualization utilities
+Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ output/
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ emotion_log.csv              # Emotion prediction log
+    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ training_history.png         # Training plots
 ```
 
 ## Configuration
@@ -233,13 +234,13 @@ Total parameters: ~3.2M
 
 ## Supported Emotions
 
-1. **Happy** 😊 - Green bounding box
-2. **Sad** 😢 - Blue bounding box
-3. **Angry** 😠 - Red bounding box
-4. **Surprised** 😲 - Orange bounding box
-5. **Neutral** 😐 - Gray bounding box
-6. **Fear** 😨 - Purple bounding box
-7. **Disgust** 🤢 - Dark green bounding box
+1. **Happy** Ã°Å¸ËœÅ  - Green bounding box
+2. **Sad** Ã°Å¸ËœÂ¢ - Blue bounding box
+3. **Angry** Ã°Å¸ËœÂ  - Red bounding box
+4. **Surprised** Ã°Å¸ËœÂ² - Orange bounding box
+5. **Neutral** Ã°Å¸ËœÂ - Gray bounding box
+6. **Fear** Ã°Å¸ËœÂ¨ - Purple bounding box
+7. **Disgust** Ã°Å¸Â¤Â¢ - Dark green bounding box
 
 ## Performance Optimization
 
@@ -394,4 +395,4 @@ For issues or questions:
 
 ---
 
-**Built with ❤️ using Python, OpenCV, and TensorFlow**
+**Built with Ã¢ÂÂ¤Ã¯Â¸Â using Python, OpenCV, and TensorFlow**
